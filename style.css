@@ -1,81 +1,158 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
+* {
     margin: 0;
-    background-color: peachpuff;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    width: 300px;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-}
-
-h2 {
-    text-align: center;
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
     color: #333;
+    
 }
 
-form {
+header.hero-section {
+    background: url('https://www.robertslawfirm.net/wp-content/uploads/2022/10/Uber-navigation-app-1024x576.jpg') ;
+    background-size: cover;
+    color: #f01212;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-input {
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background: rgba(0, 0, 0, 0.7);
 }
 
-button, a.button {
-    padding: 10px;
-    border: none;
-    background: rgb(241, 170, 108);
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-left: 2rem;
+}
+
+nav .nav-links a {
     color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
     text-decoration: none;
+    font-size: 1rem;
+}
+
+.hero-content {
     text-align: center;
+    padding: 2Arem 3rem;
+
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    padding: 0.75rem 2rem;
+    background: #ff4757;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
     transition: background 0.3s;
 }
 
-button:hover, a.button:hover {
-    background: #e77532;
+.cta-button:hover {
+    background: #e84118;
 }
 
-#alert-button {
-    margin-top: 20px;
-    background: #FF0000;
+.features-section,
+.how-it-works-section,
+.contact-section,
+.download-section {
+    padding: 1rem 1rem;
+    text-align: center;
 }
 
-#alert-button:hover {
-    background: #cc0000;
+.features-section h2,
+.how-it-works-section h2,
+.contact-section h2,
+.download-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-.hidden {
-    display: none;
+.features-section .feature,
+.how-it-works-section .step {
+    background: #5fcaeb;
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 5px;
 }
 
-.page {
-    display: none;
+.download-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.download-button {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 1rem 2rem;
+    background: #ff4757;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
-#login:target ~ .login-page,
-#contacts:target ~ .contact-page,
-#alert:target ~ .alert-page {
-    display: block;
+.download-button:hover {
+    background: #e84118;
 }
 
-#login:target ~ .container,
-#contacts:target ~ .container,
-#alert:target ~ .container {
-    display: flex;
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+    width: 100%;
+    padding: 1rem 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.send{
+    padding: 1rem 1rem;
+    background: #ff4757;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 2rem;
+  
+}
+.contact-section form button:hover {
+    background: #e84118;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
 }
