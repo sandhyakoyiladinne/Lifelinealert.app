@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: peachpuff;
+}
+
+.container {
+    width: 300px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button, a.button {
+    padding: 10px;
+    border: none;
+    background: rgb(241, 170, 108);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+button:hover, a.button:hover {
+    background: #e77532;
+}
+
+#alert-button {
+    margin-top: 20px;
+    background: #FF0000;
+}
+
+#alert-button:hover {
+    background: #cc0000;
+}
+
+.hidden {
+    display: none;
+}
+
+.page {
+    display: none;
+}
+
+#login:target ~ .login-page,
+#contacts:target ~ .contact-page,
+#alert:target ~ .alert-page {
+    display: block;
+}
+
+#login:target ~ .container,
+#contacts:target ~ .container,
+#alert:target ~ .container {
+    display: flex;
+}
