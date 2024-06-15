@@ -3,40 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emergency Alert App</title>
+    <title>Lifeline App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h1>LifeLine Alert</h1>
-    <div id="login" class="page"></div>
-    <div id="contacts" class="page"></div>
-    <div id="alert" class="page"></div>
-
-    <div class="container">
-        <div class="login-page">
-            <h2>Login</h2>
-            <form action="#contacts">
-                <input type="text" id="username" placeholder="Username" required>
-                <input type="password" id="password" placeholder="Password" required>
-                <button type="submit"> <a href="https://partyrock.aws/u/Sandhya70/js9o1GEMj/SOS-Assist%3A-Emergency-Alert-Mobile-App">Login</a></button>
-            </form>
-        </div>
-        
-        <div class="contact-page hidden">
-            <h2>Emergency Contacts</h2>
-            <form action="#alert">
-                <input type="text" id="contact1" placeholder="Contact 1 (Family/Friend)" required>
-                <input type="text" id="police" placeholder="Police Station Number" required>
-                <input type="text" id="ambulance" placeholder="Ambulance Number" required>
-                <button type="submit">Save Contacts</button>
-            </form>
-        </div>
-
-        <div class="alert-page hidden">
-            <h2>Alert</h2>
-            <p>Contacts saved successfully!</p>
-            <a href="#" class="button" id="alert-button" onclick="alert('Alert sent to emergency contacts!')">Send Alert</a>
-        </div>
+    <header class="hero-section">
+        <nav>
+            <div class="logo">Lifeline</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#download">Download</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero-content">
+        <h1>Stay Safe </h1>
+        <p>Our app detects accidents and automatically calls for help, providing your exact location and critical health information to emergency responders.</p>
+        <a href="#features" class="cta-button">Learn More</a>
     </div>
+
+    <section id="features" class="features-section">
+        <h2>Features</h2>
+        <div class="feature">
+            <h3>Accident Detection</h3>
+            <p>Utilizes advanced algorithms to detect accidents using your phone's sensors.</p>
+        </div>
+        <div class="feature">
+            <h3>Automatic Emergency Calls</h3>
+            <p>Automatically places a call to emergency services and sends an alert to your emergency contacts.</p>
+        </div>
+        <div class="feature">
+            <h3>Location Sharing</h3>
+            <p>Sends your exact location to help emergency responders reach you quickly.</p>
+        </div>
+        <div class="feature">
+            <h3>Health Information Sharing</h3>
+            <p>Shares your critical health information with emergency responders for better care.</p>
+        </div>
+        <div class="feature">
+            <h3>Manual Trigger</h3>
+            <p>Allows you to manually trigger an emergency alert if you are in danger.</p>
+        </div>
+        <div class="feature">
+            <h3>False Positive Handling</h3>
+            <p>Includes a verification system to reduce false alarms.</p>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works-section">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>1. Setup</h3>
+                <p>Enter your emergency contacts and health information.</p>
+            </div>
+            <div class="step">
+                <h3>2. Continuous Monitoring</h3>
+                <p>The app monitors your phone's sensors for signs of an accident.</p>
+            </div>
+            <div class="step">
+                <h3>3. Emergency Response</h3>
+                <p>In case of an accident, the app automatically calls for help and sends your location and health information.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download-section">
+        <h2>Get the  App</h2>
+        <p>Download the  app now to stay safe on the road. Available on the App Store and Google Play.</p>
+        <!-- Replace the # with your actual links -->
+        <a href="https://partyrock.aws/u/Sandhya70/cIDfrNN2W/SafeParty" class="download-button">Download on the App Store</a>
+        <a href="https://www.example.com/google-play-link" class="download-button">Get it on Google Play</a>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Are You Seeking Help?</h2>
+        <form action="#">
+            <input type="text" placeholder="Your Name" required>
+            <textarea placeholder="Create password" required></textarea>
+            <a href="https://partyrock.aws/u/Sandhya70/cIDfrNN2W/SafeParty" type="submit" class="send">Send Message</a>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Lifeline. All rights reserved.</p>
+    </footer>
 </body>
 </html>
